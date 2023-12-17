@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #f0eff5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    text-align: left;
+    color: #390475;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #340786;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e1286;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #0c0202;
+    padding: 10px;
+    position: relative;
+    display: grid;
+    justify-content: safe;
+    align-items: safe; /* Align items vertically in the middle */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(255, 2, 2);
+}
+
+.delete-button {
+    background-color: #b8bdeb;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.due-date {
+    color: #0f0f0f;
+    font-size: 14px;
+}
